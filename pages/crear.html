@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="es-R">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Imaginar Historias — App para construccion de biografias de familia.">
+    <link rel="icon" href="../assets/icons/REFE-SYMBOL-NEGRO.svg" type="image/x-icon">
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <title>imaginar historias</title>
+</head>
+
+<body>
+
+    <!-- ===== HEADER ===== -->
+    <header class="header-crear">
+        <h1>
+            <a href="../index.html">imaginar historias</a>
+        </h1>
+        <ul>
+            <button class="btn-crear">Archivo</button>
+            <div class="divisor-vertical"></div>
+            <button class="btn-crear">Deshacer</button>
+            <button class="btn-crear">Rehacer</button>
+            <div class="divisor-vertical"></div>
+            <button class="btn-crear">Visualizar</button>
+            <input type="text" placeholder="Título del Album" class="input-titulo-album-crear">
+            <button class="cta-crear">Imprimir</button>
+        </ul>
+        <div class="header-user-info">
+            <p><a href="../pages/usuario.html">{Nombre del Usuario}</a></p>
+            <a href="../pages/usuario.html"><img src="../assets/img/JonatasFG.jpg" alt="Foto Perfil Usuario"></a>
+        </div>
+    </header>
+
+
+    <!-- ===== SIDEBAR ===== -->
+    <aside class="sidebar">
+        <nav>
+            <ul>
+                <li><a href="../index.html" class="nav-btn">Home</a></li>
+                <li><a href="../pages/crear.html" class="nav-btn">Crear</a></li>
+                <li><a href="../pages/historias.html" class="nav-btn">Historias</a></li>
+                <li><a href="../pages/fotos.html" class="nav-btn">Fotos</a></li>
+            </ul>
+        </nav>
+    </aside>
+
+    <!-- ===== MAIN CONTENT ===== -->
+    <main>
+        <!-- ===== CREAR HERO SECTION ===== -->
+        <section class="crear-hero-section">
+            <img src="../assets/img/mockup-album.png" alt="">
+            <div class="space-agente">
+                <textarea name="chat-agente" rows="22" cols="25" placeholder="Contame más acerca de la foto"></textarea>
+                <div class="botones-agente">
+                    <button class="btn-chat-agente">Enviar</button>
+                    <button class="btn-chat-agente">Dictar</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===== SECTION Paginas Fotos ===== -->
+        <section class="page-fotos">
+            <p>&larr;</p>
+            <input type="text" placeholder="Page">
+            <h3 class="contador-paginas">de {numero de paginas}</h3>
+            <p>&rarr;</p>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2025 <a href="../index.html">imaginar historias</a>. Todos los derechos reservados.</p>
+    </footer>
+</body>
+
+</html>

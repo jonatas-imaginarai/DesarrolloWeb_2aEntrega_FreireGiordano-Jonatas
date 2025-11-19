@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="es-R">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Imaginar Historias — App para construccion de biografias de familia.">
+    <link rel="icon" href="../assets/icons/REFE-SYMBOL-NEGRO.svg" type="image/x-icon">
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <title>imaginar historias</title>
+</head>
+
+<body>
+
+    <!-- ===== HEADER ===== -->
+    <header>
+        <h1>
+            <a href="../index.html">imaginar historias</a>
+        </h1>
+        <div class="header-user-info">
+            <p><a href="../pages/usuario.html">{Nombre del Usuario}</a></p>
+            <a href="../pages/usuario.html"><img src="../assets/img/JonatasFG.jpg" alt="Foto Perfil Usuario"></a>
+        </div>
+    </header>
+
+
+    <!-- ===== SIDEBAR ===== -->
+    <aside class="sidebar">
+        <nav>
+            <ul>
+                <li><a href="../index.html" class="nav-btn">Home</a></li>
+                <li><a href="../pages/crear.html" class="nav-btn">Crear</a></li>
+                <li><a href="../pages/historias.html" class="nav-btn">Historias</a></li>
+                <li><a href="../pages/fotos.html" class="nav-btn">Fotos</a></li>
+            </ul>
+        </nav>
+    </aside>
+
+    <!-- ===== MAIN CONTENT ===== -->
+    <main>
+        <!-- ===== SECTION - Agregá Fotos ===== -->
+        <section class="agregar-fotos">
+            <h2>Agregá Fotos</h2>
+            <div class="metodos-agregar">
+                <div class="conteudo-agregar">
+                    <h3>Drag and Drop</h3>
+                    <img src="../assets/icons/image_upload.png" alt="">
+                </div>
+                <div class="conteudo-agregar">
+                    <h3>Desde el celular</h3>
+                    <img src="../assets/icons/cellphone_upload.png" alt="">
+                </div>
+                <div class="conteudo-agregar">
+                    <h3>Google Fotos</h3>
+                    <img src="../assets/icons/google-photos_2.png" alt="">
+                </div>
+            </div>
+
+        </section>
+
+        <!-- ===== SECTION - Fotos ===== -->
+        <section class="section-fotos">
+            <h2>Fotos</h2>
+            <div class="busqueda-fotos">
+                <input type="text" placeholder="Buscar">
+                <button class="btn-busqueda-fotos">Buscar</button>
+            </div>
+            <div class="filtros-fotos">
+                <button class="btn-filtro-fotos">Todas</button>
+                <button class="btn-filtro-fotos">Historia</button>
+                <button class="btn-filtro-fotos">Persona</button>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 <a href="../index.html">imaginar historias</a>. Todos los derechos reservados.</p>
+    </footer>
+</body>
+
+</html>

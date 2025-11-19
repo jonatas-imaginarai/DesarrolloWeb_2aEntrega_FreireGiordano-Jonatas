@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="es-R">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Imaginar Historias — App para construccion de biografias de familia.">
+    <link rel="icon" href="./assets/icons/REFE-SYMBOL-NEGRO.svg" type="image/x-icon">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <title>imaginar historias</title>
+</head>
+
+<body>
+
+    <!-- ===== HEADER ===== -->
+    <header>
+        <h1>
+            <a href="./index.html">imaginar historias</a>
+        </h1>
+        <div class="header-user-info">
+            <p><a href="./pages/usuario.html">{Nombre del Usuario}</a></p>
+            <a href="./pages/usuario.html"><img src="./assets/img/JonatasFG.jpg" alt="Foto Perfil Usuario"></a>
+        </div>
+    </header>
+
+
+    <!-- ===== SIDEBAR ===== -->
+    <aside class="sidebar">
+        <nav>
+            <ul>
+                <li><a href="./index.html" class="nav-btn">Home</a></li>
+                <li><a href="./pages/crear.html" class="nav-btn">Crear</a></li>
+                <li><a href="./pages/historias.html" class="nav-btn">Historias</a></li>
+                <li><a href="./pages/fotos.html" class="nav-btn">Fotos</a></li>
+            </ul>
+        </nav>
+    </aside>
+
+    <!-- ===== MAIN CONTENT ===== -->
+    <main>
+        <!-- ===== SECTION - HERO ===== -->
+        <section class="hero-section">
+            <h2>Bem vindo, {Nombre del Usuario}</h2>
+            <p>Qué historia te gustaría contar hoy?</p>
+            <button class="btn-primary">Crear Nueva Historia</button>
+
+        </section>
+
+        <!-- ===== SECTION - MIS HISTORIAS ===== -->
+        <section class="mis-historias">
+            <h2>Mis Historias</h2>
+            <div class="cards-historias">
+                <div id="patagonia" class="conteudo-card">
+                    <h3>Patagonia 2019</h3>
+                    <div class="progreso">
+                        <div class="progreso-barra"></div>
+                    </div>
+                </div>
+                <div id="bahia" class="conteudo-card">
+                    <h3>Bahia 2023</h3>
+                    <div class="progreso">
+                        <div class="progreso-barra"></div>
+                    </div>
+                </div>
+                <div id="munay" class="conteudo-card">
+                    <h3>Munay 2 años</h3>
+                    <div class="progreso">
+                        <div class="progreso-barra"></div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+        <!-- ===== SECTION - FAMILIA ===== -->
+        <section class="nombre-familia">
+            <h2>Familia {Nombre de la Familia}</h2>
+            <button class="btn-primary">Agregar Miembros</button>
+            <div class="cards-familia">
+                <div class="conteudo-card-familia">
+                    <h3>{Nombre del Padre}</h3>
+                    <img src="./assets/img/JonatasFG.jpg" alt="Foto Pareja">
+                </div>
+                <div class="conteudo-card-familia">
+                    <h3>{Nombre de la Madre}</h3>
+                    <img src="./assets/img/JonatasFG.jpg" alt="Foto Pareja">
+                </div>
+                <div class="conteudo-card-familia">
+                    <h3>{Nombre Hijo 1}</h3>
+                    <img src="./assets/img/JonatasFG.jpg" alt="Foto Pareja">
+                </div>
+                <div class="conteudo-card-familia">
+                    <h3>{Nombre Hijo 2}</h3>
+                    <img src="./assets/img/JonatasFG.jpg" alt="Foto Pareja">
+                </div>
+            </div>
+
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 <a href="./index.html">imaginar historias</a>. Todos los derechos reservados.</p>
+    </footer>
+</body>
+
+</html>
