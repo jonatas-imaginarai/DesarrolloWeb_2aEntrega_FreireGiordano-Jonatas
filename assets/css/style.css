@@ -891,12 +891,12 @@ footer p a:hover {
 
   /* --- HEADER --- */
   header {
-    height: auto;
+
     padding: 10px;
   }
 
   footer {
-    margin-left: 0;
+    margin-left: 0px;
   }
 
   .h1-header {
