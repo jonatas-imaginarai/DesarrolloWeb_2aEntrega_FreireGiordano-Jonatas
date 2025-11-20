@@ -86,29 +86,29 @@
     <!-- ===== MAIN CONTENT ===== -->
     <main>
         <!-- ===== CREAR HERO SECTION ===== -->
-        <section class="crear-hero-section">
-            <img src="../assets/img/mockup-album.png" alt="">
-            <div class="space-agente">
-                <textarea name="chat-agente" rows="22" cols="25" placeholder="Contame más acerca de la foto"></textarea>
-                <div class="botones-agente">
-                    <button class="btn-chat-agente">Enviar</button>
-                    <button class="btn-chat-agente">Dictar</button>
+        <section class="crear-hero-section container-fluid d-flex flex-md-row">
+            <img src="../assets/img/mockup-album.png" alt="" class="container-fluid">
+            <div class="space-agente container-fluid">
+                <textarea class="textarea-agent container-fluid mt-3" name="chat-agente" rows="22" cols="25" placeholder="Contame más acerca de la foto"></textarea>
+                <div class="botones-agente d-flex align-items-center justify-content-center flex-column">
+                    <button class="btn-chat-agente container-fluid m-2">Enviar</button>
+                    <button class="btn-chat-agente container-fluid m-2">Dictar</button>
                 </div>
             </div>
         </section>
 
         <!-- ===== SECTION Paginas Fotos ===== -->
-        <section class="page-fotos">
-            <p>&larr;</p>
-            <input type="text" placeholder="Page">
-            <h3 class="contador-paginas">de {numero de paginas}</h3>
-            <p>&rarr;</p>
+        <section class="page-fotos d-flex align-items-center d-flex flex-md-row">
+            <p class="m-0">&larr;</p>
+            <input type="text" placeholder="Page" class="m-0">
+            <h3 class="contador-paginas m-0">de {numero de paginas}</h3>
+            <p class="m-0">&rarr;</p>
         </section>
 
     </main>
 
-    <footer>
-        <p>&copy; 2025 <a href="../index.html">imaginar historias</a>. Todos los derechos reservados.</p>
+    <footer class="text-center">
+        <p class="text-center">&copy; 2025 <a href="../index.html">imaginar historias</a>. Todos los derechos reservados.</p>
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"

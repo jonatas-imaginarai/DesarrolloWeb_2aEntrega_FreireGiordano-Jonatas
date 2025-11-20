@@ -533,12 +533,8 @@ section {
 }
 
 .botones-agente {
-  display: flex;
-  flex-direction: row;
   gap: 0.5rem;
   position: absolute;
-  align-items: right;
-  justify-content: flex-end;
   padding: 0.8rem;
 }
 
@@ -560,11 +556,6 @@ section {
 
 /* --- Hero Section Crear --- */
 .crear-hero-section {
-  display: flex;
-  width: 100%;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-between;
   gap: 0.1rem;
   padding: 0.8rem;
   border-radius: var(--radius-md);
@@ -584,10 +575,6 @@ section {
 
 /* --- Section Page Fotos --- */
 .page-fotos {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
   gap: 1rem;
   padding: 0.8rem;
   border-radius: var(--radius-md);
@@ -884,6 +871,12 @@ footer p a:hover {
   .cards-familia .conteudo-card-familia:nth-child(1),
   .cards-familia .conteudo-card-familia:nth-child(2) {
     grid-column: span 1;
+  }
+
+  .textarea-agent {
+    rows:"15";
+    cols:"18";
+
   }
 }
 
