@@ -42,7 +42,7 @@
   --font-secondary: "Urbanist", sans-serif;
 }
 
-/* --- Reset --- */
+/* --- RESET --- */
 * {
   margin: 0;
   padding: 0;
@@ -51,7 +51,13 @@
   list-style: none;
 }
 
-/* --- Header --- */
+html,
+body {
+  width: 100%;
+  overflow-x: hidden;
+}
+
+/* --- HEADER --- */
 header {
   background-color: var(--color-bg-body);
   border-bottom: 1px solid var(--color-border);
@@ -161,24 +167,13 @@ header {
   color: rgb(112, 255, 207);
 }
 
-@media(max-width: 577px) {
-  .hamburguesa {
-    display: block;
-  }
-
-  .header-user-info {
-    display: none;
-  }
-
-
-
-}
-
-/* --- Sidebar --- */
+/* --- SIDEBAR --- */
 .sidebar {
   background-color: var(--color-bg-body);
   width: 150px;
   border-right: 1px solid var(--color-border);
+  height: 100%;
+  margin-top: 70px;
 }
 
 .boton-nav-sidebar {
@@ -217,40 +212,6 @@ header {
   color: var(--color-text-hover);
 }
 
-/* .sidebar a {
-  text-decoration: none;
-  color: var(--color-text);
-  display: flex;
-  align-items: center;
-  font-size: 0.95rem;
-  font-weight: 500;
-  padding: 0.2rem 2.5rem;
-  border-radius: 6px;
-  transition: var(--transition);
-} */
-
-/* .sidebar a:hover {
-  background-color: var(--color-bg-hover);
-  color: var(--color-text-hover);
-} */
-
-
-/* .header-crear {
-  display: flex;
-  flex-direction: row;
-  gap: 1rem;
-  align-items: center;
-  margin-right: 1rem;
-} */
-
-/* .header-crear ul {
-  display: flex;
-  flex-direction: row;
-  gap: 1rem;
-  align-items: center;
-  margin-right: 1rem;
-} */
-
 main {
   display: flex;
   flex-direction: column;
@@ -259,6 +220,7 @@ main {
   margin-left: 150px;
   margin-top: 70px;
   gap: 1rem;
+  background-color: var(--color-bg-body);
 }
 
 
@@ -270,7 +232,7 @@ section {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  background-color: var(--color-surface);
+  background-color: var(--color-bg-body);
   gap: 1.5rem;
   border-style: solid;
   border: 1px solid var(--color-border);
@@ -386,6 +348,20 @@ section {
   background-repeat: no-repeat;
 }
 
+#pantanal {
+  background-image: url('../img/pantanal.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+#alaska {
+  background-image: url('../img/alaska.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
 /* --- Mi Familia Section --- */
 .nombre-familia {
   background: var(--color-bg-section);
@@ -423,14 +399,20 @@ section {
 }
 
 .cards-familia {
-  padding: 0.8rem;
+  padding: 2rem;
   width: 100%;
   min-height: 250px;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: left;
   gap: 1rem;
+  display: grid;
+  gap: 2rem;
+  grid-template-columns: repeat(3, 1fr);
+  max-width: 100%;
+  overflow: hidden;
+}
+
+.conteudo-card-familia:nth-child(1),
+.conteudo-card-familia:nth-child(2) {
+  grid-column: span 1;
 }
 
 .conteudo-card-familia {
@@ -867,7 +849,9 @@ footer {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  background-color: var(--color-surface);
+  font-family: "Inter Tight", sans-serif;
+  font-weight: 300;
+  background-color: var(--color-bg-body);
   padding: 8px;
   bottom: 0;
   position: bottom;
@@ -878,10 +862,118 @@ footer {
 }
 
 footer p a {
+  font-family: "Inter Tight", sans-serif;
   color: var(--color-texto);
   transition: var(--transition);
+  text-decoration: none;
 }
 
 footer p a:hover {
   color: var(--color-accent);
+}
+
+
+
+
+@media (max-width: 992px) {
+  .cards-familia {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  /* Os primeiros cards voltam ao normal */
+  .cards-familia .conteudo-card-familia:nth-child(1),
+  .cards-familia .conteudo-card-familia:nth-child(2) {
+    grid-column: span 1;
+  }
+}
+
+@media(max-width: 577px) {
+
+  /* --- HEADER --- */
+  header {
+    height: auto;
+    padding: 10px;
+  }
+
+  .h1-header {
+    font-size: 1.1rem;
+  }
+
+  /* mostra o botão hamburguesa no mobile */
+  .hamburguesa {
+    display: block;
+  }
+
+  /* esconde os botões de navegação do desktop */
+  .header-user-info {
+    display: none !important;
+  }
+
+  /* --- SIDEBAR --- */
+  .sidebar {
+    display: none;
+    /* sidebar some no mobile */
+  }
+
+  /* --- MAIN --- */
+  main {
+    margin-left: 0;
+    /* remove espaço da sidebar */
+    padding: 16px;
+  }
+
+  /* --- HERO SECTION --- */
+  .hero-section {
+    padding: 1rem;
+  }
+
+  /* --- CARDS HISTORIAS --- */
+  .cards-historias {
+    flex-direction: column;
+    min-height: auto;
+  }
+
+  .conteudo-card {
+    max-width: 100%;
+  }
+
+  /* --- FAMILIA SECTION --- */
+  .cards-familia {
+    grid-template-columns: 1fr;
+    /* vira 1 coluna */
+  }
+
+  .cards-familia .conteudo-card-familia:nth-child(1),
+  .cards-familia .conteudo-card-familia:nth-child(2) {
+    grid-column: span 1;
+  }
+
+  /* --- AGREGAR FOTOS --- */
+  .metodos-agregar {
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+
+  .conteudo-agregar {
+    width: 100%;
+    max-width: 250px;
+  }
+
+  /* --- BUSQUEDA FOTOS --- */
+  .busqueda-fotos {
+    flex-direction: column;
+    padding: 0.5rem;
+    gap: 0.5rem;
+  }
+
+  .filtros-fotos {
+    flex-wrap: wrap;
+    height: auto;
+    gap: 0.5rem;
+  }
+
+  /* --- PAGE FOTOS --- */
+  .page-fotos {
+    flex-direction: column;
+  }
 }
