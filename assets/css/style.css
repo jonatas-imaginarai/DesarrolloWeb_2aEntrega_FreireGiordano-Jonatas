@@ -121,6 +121,15 @@ header {
   background-color: var(--color-bg-body);
 }
 
+.boton-hamburguesa {
+  border: 1px solid var(--color-border);
+}
+
+.background-cuerpo-hamburguesa {
+  background-color: var(--color-bg-body);
+
+}
+
 @media(max-width: 577px) {
 .hamburguesa {
   display: block;
