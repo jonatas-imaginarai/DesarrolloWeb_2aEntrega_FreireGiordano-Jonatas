@@ -126,8 +126,6 @@ header {
   z-index: 100;
 }
 
-
-
 .hamburguesa button {
   background-color: var(--color-bg-body);
 }
@@ -147,6 +145,7 @@ header {
 
 .boton-nav-hamburguesa {
   text-decoration: none;
+  font-family: "Inter Tight", sans-serif;
   font-weight: 700;
   font-style: normal;
   font-size: 1.3rem;
@@ -175,28 +174,83 @@ header {
 
 }
 
-/* --- Texto --- */
-/* p,
-span,
-li,
-a,
-button,
-input,
-label {
-  font-family: 'Roboto', sans-serif;
-  font-weight: 400;
-} */
+/* --- Sidebar --- */
+.sidebar {
+  background-color: var(--color-bg-body);
+  width: 150px;
+  border-right: 1px solid var(--color-border);
+}
 
-/* --- Body --- */
-/* body {
-  background-color: var(--color-surface);
+.boton-nav-sidebar {
+  text-decoration: none;
+  font-family: "Inter Tight", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  font-size: 0.8rem;
+  transition: 0.15s ease;
+  color: var(--color-heading);
+}
+
+.boton-nav-sidebar:hover {
+  color: var(--color-text-important);
+}
+
+.boton-nav-sidebar:active {
+  color: rgb(107, 107, 107)
+}
+
+
+.boton-icon-sidebar {
+  transition: 0.2s ease;
+  width: 80px;
+  height: 80px;
+}
+
+.boton-icon-sidebar:hover {
+  border: 1px solid var(--color-border);
+  background-color: var(--color-bg-hover);
+  cursor: pointer;
+  color: var(--color-text-important);
+  border-radius: 6px;
+  padding-left: 8px;
+  padding-right: 8px;
+  color: var(--color-text-hover);
+}
+
+/* .sidebar a {
+  text-decoration: none;
   color: var(--color-text);
-  font-family: var(--font-secondary), var(--font-primary), sans-serif;
-  font-size: 1rem;
-  line-height: 1.6;
+  display: flex;
+  align-items: center;
+  font-size: 0.95rem;
+  font-weight: 500;
+  padding: 0.2rem 2.5rem;
+  border-radius: 6px;
+  transition: var(--transition);
 } */
 
-/* --- Main --- */
+/* .sidebar a:hover {
+  background-color: var(--color-bg-hover);
+  color: var(--color-text-hover);
+} */
+
+
+/* .header-crear {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  align-items: center;
+  margin-right: 1rem;
+} */
+
+/* .header-crear ul {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  align-items: center;
+  margin-right: 1rem;
+} */
+
 main {
   display: flex;
   flex-direction: column;
@@ -207,54 +261,7 @@ main {
   gap: 1rem;
 }
 
-/* --- Sidebar --- */
-.sidebar {
-  background-color: var(--color-surface);
-  width: 150px;
-  display: flex;
-  flex-direction: column;
-  border-right: 1px solid var(--color-border);
-  position: fixed;
-  align-items: center;
-  justify-content: space-between;
-  height: 100vh;
-  padding: 2rem;
-  gap: 2rem;
-}
 
-.sidebar a {
-  text-decoration: none;
-  color: var(--color-text);
-  display: flex;
-  align-items: center;
-  font-size: 0.95rem;
-  font-weight: 500;
-  padding: 0.2rem 2.5rem;
-  border-radius: 6px;
-  transition: var(--transition);
-}
-
-.sidebar a:hover {
-  background-color: var(--color-bg-hover);
-  color: var(--color-text-hover);
-}
-
-
-.header-crear {
-  display: flex;
-  flex-direction: row;
-  gap: 1rem;
-  align-items: center;
-  margin-right: 1rem;
-}
-
-.header-crear ul {
-  display: flex;
-  flex-direction: row;
-  gap: 1rem;
-  align-items: center;
-  margin-right: 1rem;
-}
 
 
 /* --- Section General --- */
