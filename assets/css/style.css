@@ -80,6 +80,10 @@ header {
   color: rgb(112, 255, 207)
 }
 
+.header-user-info {
+  display: flex;
+}
+
 .header-user-info-a {
   border-color: var(--color-border);
   color: var(--color-heading);
@@ -107,6 +111,26 @@ header {
   object-fit: cover;
   border: 1px solid var(--color-border);
   cursor: pointer;
+}
+
+.hamburguesa {
+  display: none;
+}
+
+.hamburguesa button {
+  background-color: var(--color-bg-body);
+}
+
+@media(max-width: 577px) {
+.hamburguesa {
+  display: block;
+}
+
+.header-user-info {
+  display: none;
+}
+
+
 }
 
    /* --- Texto --- */
